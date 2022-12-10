@@ -19,6 +19,7 @@ main()
 	SetConsoleTextAttribute(hConsole, csb.wAttributes);
 	HKEY hkey;
 	HKEY hMyKey;
+
 	RegOpenKeyW(HKEY_CURRENT_USER, NULL, &hkey);
 	if (RegCreateKeyW(hkey, L"MyKey", &hMyKey) == ERROR_SUCCESS)
 	{
