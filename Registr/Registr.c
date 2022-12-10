@@ -23,7 +23,7 @@ main()
 	RegOpenKeyW(HKEY_CURRENT_USER, NULL, &hkey);
 	if (RegCreateKeyW(hkey, L"MyKey", &hMyKey) == ERROR_SUCCESS)
 	{
-		MessageBoxW(NULL, L"Yes", L"YES", MB_OK);
+		MessageBoxW(NULL, L"Yes", L"NO", MB_OK);
 	}
 	if (RegSetValueW(hMyKey, NULL, REG_SZ, L"Message", 8 * sizeof(WCHAR)) == ERROR_SUCCESS)
 	{
